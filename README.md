@@ -1,4 +1,4 @@
-# Result RUN docker container favicon:v1
+# Results of runing docker container (task B7.8.7)
 
 ***
 
@@ -50,7 +50,7 @@ Saving to: 'favicon.ico'
 
      0K .                                                     100%  439M=0s 
 
-2022-12-03 09:44:37 (439 MB/s) - 'favicon.ico' saved [1150/1150] \
+2022-12-03 09:44:37 (439 MB/s) - 'favicon.ico' saved [1150/1150] 
 
 ***
 
