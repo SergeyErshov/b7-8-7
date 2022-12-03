@@ -25,5 +25,38 @@ Saving to: 'favicon.ico' \
 
 ***
 
+CMD: \
+sudo docker run --env url=yandex.ru --mount type=volume,dst=/opt/docker_b7-8-7 favicon:v2 \
+ 
+ \
+--2022-12-03 09:44:37--  http://yandex.ru/favicon.ico \
+Resolving yandex.ru (yandex.ru)... 5.255.255.60, 5.255.255.5, 77.88.55.77, ... \
+Connecting to yandex.ru (yandex.ru)|5.255.255.60|:80... connected. \
+HTTP request sent, awaiting response... 302 Moved temporarily \
+Location: https://yandex.ru/favicon.ico [following] \
+--2022-12-03 09:44:37--  https://yandex.ru/favicon.ico \
+Connecting to yandex.ru (yandex.ru)|5.255.255.60|:443... connected. \
+WARNING: cannot verify yandex.ru's certificate, issued by 'CN=GlobalSign ECC OV SSL CA 2018,O=GlobalSign nv-sa,C=BE': \
+  Unable to locally verify the issuer's authority. \
+HTTP request sent, awaiting response... 301 Moved permanently \
+Location: https://yastatic.net/lego/_/pDu9OWAQKB0s2J9IojKpiS_Eho.ico [following] \
+--2022-12-03 09:44:37--  https://yastatic.net/lego/_/pDu9OWAQKB0s2J9IojKpiS_Eho.ico \
+Resolving yastatic.net (yastatic.net)... 178.154.131.215, 178.154.131.216, 178.154.131.217, ... \
+Connecting to yastatic.net (yastatic.net)|178.154.131.215|:443... connected. \
+WARNING: cannot verify yastatic.net's certificate, issued by 'CN=GlobalSign ECC OV SSL CA 2018,O=GlobalSign nv-sa,C=BE': \
+  Unable to locally verify the issuer's authority. \
+HTTP request sent, awaiting response... 200 OK \
+Length: 1150 (1.1K) [image/x-icon] \
+Saving to: 'favicon.ico' \
+
+     0K .                                                     100%  439M=0s \
+
+2022-12-03 09:44:37 (439 MB/s) - 'favicon.ico' saved [1150/1150] \
+ \
+
+***
+
 image stats: \
 favicon       v1        acd302c96ad1   25 minutes ago   122MB \
+favicon       v2        632700f62425   About a minute ago   47.2MB \
+
