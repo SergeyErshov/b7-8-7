@@ -1,0 +1,12 @@
+FROM ubuntu:22.04 as builder
+LABEL name "favicon:v2"
+RUN apt-get update && apt-get install -y wget
+
+FROM scratch
+
+COPY --from=builder /lib64/ld-linux-x86-64.so.2 /lib64/
+COPY --from=builder /lib/x86_64-linux-gnu/ /lib/x86_64-linux-gnu/
+COPY --from=builder /usr/bin/wget /usr/bin/sh /bin/
+
+# disable checking host cert (not needed) for minimize image
+CMD wget --no-check-certificate ${url}/favicon.ico
