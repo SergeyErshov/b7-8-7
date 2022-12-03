@@ -25,3 +25,5 @@ Saving to: 'favicon.ico' \
 
 ***
 
+image stats: \
+favicon       v1        acd302c96ad1   25 minutes ago   122MB \
